@@ -1,5 +1,6 @@
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\service\UserService.java
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\swaggerconfig\SwaggerConfig.java
+C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\entity\HottestRepositories.java
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\entity\User.java
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\ProduceConsumeApplication.java
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\service\KafkaConsumer.java
@@ -8,6 +9,7 @@ C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\entity\Use
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\entity\Address.java
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\exceptionhandling\ResourceNotFoundException.java
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\exceptionhandling\ResourceErrorResponse.java
+C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\entity\Item.java
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\exceptionhandling\ResourceExceptionHandler.java
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\repo\UserServInt.java
 C:\Users\SYS\git\UserSystem\Produce-Consume\src\main\java\com\example\controller\UserController.java

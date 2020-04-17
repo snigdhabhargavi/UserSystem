@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import java.net.URL;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,13 +13,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
+import com.example.entity.HottestRepositories;
 import com.example.entity.User;
 import com.example.entity.UserDTO;
 import com.example.exceptionhandling.ResourceNotFoundException;
 import com.example.repo.UserServInt;
 import com.example.service.KafkaConsumer;
 import com.example.service.KafkaSender;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -37,6 +41,18 @@ public class UserController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 	
+	private RestTemplate template=new RestTemplate();
+	
+	@GetMapping("/hr")
+	public HottestRepositories getRestData(){
+		
+
+		String hruri = "https://api.github.com/search/repositories?q=created%3E2020-03-03&sort=stars&order=desc";	
+//		ObjectMapper mapper = new ObjectMapper();
+//		HottestRepositories hr = mapper.readValue(new URL(hruri), HottestRepositories.class);
+		return template.getForObject(hruri, HottestRepositories.class);
+	}
+
 	@GetMapping(value="/getallusers")
 	@ApiOperation(value="Returns list of all users")
 	public List<UserDTO> getAllusers(){

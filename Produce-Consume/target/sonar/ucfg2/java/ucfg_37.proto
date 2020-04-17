@@ -1,0 +1,63 @@
+
+_com.example.controller.UserController#sendNewsInformation(Ljava/lang/String;)Ljava/lang/String;n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaW W(%"paramAnnotations*È
+paramAnnotationsn
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaW% W(NÕ
+ 
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaV V(2
+%4"
+__annotate*'%
+#io.swagger.annotations.ApiOperation*
+
+messagejava.lang.Stringﬁ
+€
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaW& W(>
+%5"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+messagejava.lang.StringÆ
+´
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaWF W(M
+messagejava.lang.String"__annotation*
+
+%4*
+
+%5*
+1*Õ	
+1n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaX X(‹
+Ÿ
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaX X(%
+%0com.example.service.KafkaSender"__id*:*8'
+%com.example.controller.UserController"
+kafkaSender∫∑
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaX X(0
+
+%1void"Hcom.example.service.KafkaSender#sendNewsInformation(Ljava/lang/String;)V*'
+%
+%0com.example.service.KafkaSender*
+
+messagejava.lang.String2'sendNewsInformation(Ljava/lang/String;)ô
+ñ
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaY Y(
+%2org.slf4j.Logger"__id*
+""ˇ¸
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaY Y(1
+
+%3void"*org.slf4j.Logger#info(Ljava/lang/String;)V*
+
+%2org.slf4j.Logger*
+News Information published2info(Ljava/lang/String;)"ù
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaZ Z(9+)
+'News Information published successfully:
+messagejava.lang.StringB)'
+%com.example.controller.UserController

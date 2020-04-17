@@ -1,0 +1,48 @@
+
+[com.example.service.UserService#addUser(Lcom/example/entity/User;)Lcom/example/entity/User;h
+^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java" "("paramAnnotations*å
+paramAnnotationsh
+^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java" "(º
+·
+h
+^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java! !(
+
+%2"
+__annotate*
+java.lang.Override*!
+
+usercom.example.entity.User¤
+¡
+h
+^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java" "(
+usercom.example.entity.User"__annotation*
+
+%2*
+1*Ä
+1h
+^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java# #(Ä
+Á
+h
+^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java# #(
+%0com.example.repo.UserRepo"__id*.*,!
+com.example.service.UserService"
+urepoËÈ
+h
+^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java# #(
+%1com.example.entity.User"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*!
+
+%0com.example.repo.UserRepo*!
+
+usercom.example.entity.User2save(Ljava/lang/Object;)²
+¯
+h
+^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java# #(
+ucom.example.entity.User"__id*
+
+%1com.example.entity.User"Š
+h
+^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java$ $(
+
+ucom.example.entity.User:
+usercom.example.entity.UserB#!
+com.example.service.UserService

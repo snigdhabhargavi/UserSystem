@@ -1,0 +1,43 @@
+
+Mcom.example.controller.UserController#getUserById(I)Lcom/example/entity/User;n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java/ /("1*—
+1n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java0 0(Ù
+Ö
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java0 0("
+%0com.example.repo.UserServInt"__id*:*8'
+%com.example.controller.UserController"
+userServiceš—
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java0 0(/
+%1com.example.entity.User"Fcom.example.repo.UserServInt#fetchUserById(I)Lcom/example/entity/User;*$
+"
+%0com.example.repo.UserServInt*
+""2fetchUserById(I)»
+¸
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java0 0(0
+usercom.example.entity.User"__id*
+
+%1com.example.entity.User™
+–
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java1 1(
+%2org.slf4j.Logger"__id*
+""¸µ
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java1 1(#
+
+%3void"<org.slf4j.Logger#info(Ljava/lang/String;Ljava/lang/Object;)V*
+
+%2org.slf4j.Logger*
+User Data {}*!
+
+usercom.example.entity.User2*info(Ljava/lang/String;Ljava/lang/Object;)"“
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java2 2(!
+
+usercom.example.entity.User:
+""B)'
+%com.example.controller.UserController

@@ -1,0 +1,73 @@
+
+ecom.example.controller.UserController#addUserData(Lcom/example/entity/User;)Lcom/example/entity/User;n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java7 7("paramAnnotations*à
+paramAnnotationsn
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java7 7(0á
+Þ
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java5 5(
+%4"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*!
+
+usercom.example.entity.UserÑ
+Î
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java6 6($
+%5"
+__annotate*'%
+#io.swagger.annotations.ApiOperation*!
+
+usercom.example.entity.Userá
+Þ
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java7 7(%
+%6"
+__annotate*75
+3org.springframework.web.bind.annotation.RequestBody*!
+
+usercom.example.entity.Userº
+·
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java7+ 7(/
+usercom.example.entity.User"__annotation*
+
+%4*
+
+%5*
+
+%6*
+1*Ò	
+1n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java8 8(™
+–
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java8 8(
+%0org.slf4j.Logger"__id*
+""ôñ
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java8 8( 
+
+%1void"*org.slf4j.Logger#info(Ljava/lang/String;)V*
+
+%0org.slf4j.Logger*
+Adding new user2info(Ljava/lang/String;)Ù
+Ö
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java9	 9("
+%2com.example.repo.UserServInt"__id*:*8'
+%com.example.controller.UserController"
+userServiceÙÖ
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java9	 9("
+%3com.example.entity.User"Xcom.example.repo.UserServInt#addUser(Lcom/example/entity/User;)Lcom/example/entity/User;*$
+"
+%2com.example.repo.UserServInt*!
+
+usercom.example.entity.User2"addUser(Lcom/example/entity/User;)"‘
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java9 9(#
+
+%3com.example.entity.User:
+usercom.example.entity.UserB)'
+%com.example.controller.UserController

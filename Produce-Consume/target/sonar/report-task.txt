@@ -1,0 +1,7 @@
+organization=snigdhabhargavi
+projectKey=snigdhabhargavi_UserSystem
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.6907
+dashboardUrl=https://sonarcloud.io/dashboard?id=snigdhabhargavi_UserSystem
+ceTaskId=AXGHp03mXhfIFiRxMMSg
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXGHp03mXhfIFiRxMMSg

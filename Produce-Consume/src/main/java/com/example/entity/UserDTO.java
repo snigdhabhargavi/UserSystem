@@ -3,7 +3,6 @@ package com.example.entity;
 import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -18,7 +17,7 @@ public class UserDTO {
 	private String email;
 	private String password;
 	private String role;
-	@OneToMany(cascade=CascadeType.ALL ,fetch=FetchType.EAGER)
+	@OneToMany(cascade=CascadeType.ALL)
 	Set<Address> address;
 	
 	public UserDTO() {

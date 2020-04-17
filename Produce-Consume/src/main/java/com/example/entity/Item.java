@@ -10,20 +10,6 @@ public class Item {
     private int watchers_count;
     private String language;
     private String description;
-    
-//    public Item() {
-//		super();
-//	}
-//    
-//    @JsonCreator
-//	public Item(@JsonProperty String name,@JsonProperty String html_url,@JsonProperty int watchers_count,@JsonProperty String language,@JsonProperty String description) {
-//		super();
-//		this.name = name;
-//		this.html_url = html_url;
-//		this.watchers_count = watchers_count;
-//		this.language = language;
-//		this.description = description;
-//	}
 
 	public String getName() {
 		return name;

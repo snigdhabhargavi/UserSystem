@@ -1,6 +1,5 @@
 package com.example.controller;
 
-import java.net.URL;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,8 +21,6 @@ import com.example.exceptionhandling.ResourceNotFoundException;
 import com.example.repo.UserServInt;
 import com.example.service.KafkaConsumer;
 import com.example.service.KafkaSender;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
@@ -44,12 +41,10 @@ public class UserController {
 	private RestTemplate template=new RestTemplate();
 	
 	@GetMapping("/hr")
+	@ApiOperation(value="Returns Rest Data")
 	public HottestRepositories getRestData(){
 		
-
 		String hruri = "https://api.github.com/search/repositories?q=created%3E2020-03-03&sort=stars&order=desc";	
-//		ObjectMapper mapper = new ObjectMapper();
-//		HottestRepositories hr = mapper.readValue(new URL(hruri), HottestRepositories.class);
 		return template.getForObject(hruri, HottestRepositories.class);
 	}
 

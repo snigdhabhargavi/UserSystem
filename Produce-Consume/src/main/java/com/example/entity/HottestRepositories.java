@@ -21,13 +21,4 @@ public class HottestRepositories {
 	public void setItems(Set<Item> items) {
 		this.items = items;
 	}
-
-//	public HottestRepositories() {
-//		super();
-//	}
-//
-//	public HottestRepositories(@JsonProperty("items")Item[] items) {
-//		super();
-//		this.items = items;
-//	}	
 }

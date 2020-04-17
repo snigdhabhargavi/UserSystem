@@ -1,6 +1,5 @@
 package com.example.entity;
 
-import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -20,7 +19,7 @@ public class UserDTO {
 	private String password;
 	private String role;
 	@OneToMany(cascade=CascadeType.ALL ,fetch=FetchType.EAGER)
-	Set<Address> address =new HashSet<Address>();
+	Set<Address> address;
 	
 	public UserDTO() {
 		super();

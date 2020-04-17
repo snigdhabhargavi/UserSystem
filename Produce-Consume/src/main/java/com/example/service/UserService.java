@@ -33,7 +33,7 @@ public class UserService implements UserServInt{
 	@Override
 	public UserDTO updateUser(int id, UserDTO user) throws ResourceNotFoundException {
 		UserDTO u = urepo.findById(id)
-				.orElseThrow(() -> new ResourceNotFoundException("User not found for this Id :: "+id));
+				.orElseThrow(() -> new ResourceNotFoundException("Couldn't update. User not found for this Id :: "+id));
 		if(u!=null) {
 			u.setName(user.getName());
 			u.setEmail(user.getEmail());
@@ -47,8 +47,8 @@ public class UserService implements UserServInt{
 
 	@Override
 	public void deleteUser(int id) throws ResourceNotFoundException {
-		urepo.findById(id)
-			.orElseThrow(() -> new ResourceNotFoundException("User not found for this Id :: "+id));
-		urepo.deleteById(id);
+		UserDTO userdto=urepo.findById(id)
+			.orElseThrow(() -> new ResourceNotFoundException("Coudln't delete. User not found for this Id :: "+id));
+		urepo.delete(userdto);
 	}
 }

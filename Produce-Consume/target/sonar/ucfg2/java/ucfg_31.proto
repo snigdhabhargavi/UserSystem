@@ -1,46 +1,16 @@
 
-Ccom.example.controller.UserController#getAllusers()Ljava/util/List;n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java( (("1*ˆ
-1n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java) )(™
-–
-n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java) )(
-%0org.slf4j.Logger"__id*
-""Ù
-Ö
-n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java)" )(-"
-%1com.example.repo.UserServInt"__id*:*8'
-%com.example.controller.UserController"
-userServiceþû
-n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java)" )(=
-%2java.util.List"<com.example.repo.UserServInt#fetchAllUsers()Ljava/util/List;*$
-"
-%1com.example.repo.UserServInt2fetchAllUsers()±®
-n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java) )(>
-
-%3void"<org.slf4j.Logger#info(Ljava/lang/String;Ljava/lang/Object;)V*
+9com.example.entity.Address#getAddress()Ljava/lang/String;c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/Address.java" "("1*œ
+1c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/Address.java#	 #(°
+­
+c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/Address.java#	 #(
+%0java.lang.String"__id*(*&
+com.example.entity.Address"
+addr"
+c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/Address.java# #(
 
-%0org.slf4j.Logger*
-List of users {}*
-
-%2java.util.List2*info(Ljava/lang/String;Ljava/lang/Object;)Ù
-Ö
-n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java*	 *("
-%4com.example.repo.UserServInt"__id*:*8'
-%com.example.controller.UserController"
-userServiceþû
-n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java*	 *($
-%5java.util.List"<com.example.repo.UserServInt#fetchAllUsers()Ljava/util/List;*$
-"
-%4com.example.repo.UserServInt2fetchAllUsers()"ˆ
-n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java* *(%
-
-%5java.util.ListB)'
-%com.example.controller.UserController
+%0java.lang.StringB
+com.example.entity.Address

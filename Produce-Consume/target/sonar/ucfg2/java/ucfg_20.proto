@@ -1,63 +1,16 @@
 
-dcom.example.swaggerconfig.SwaggerConfig#userApi()Lspringfox/documentation/spring/web/plugins/Docket;p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java ("1*Î
-1p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java (%¸
-µ
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java (/3
-%0-springfox.documentation.spi.DocumentationType"__id*
-""áÞ
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java (7
-%11springfox.documentation.spring.web.plugins.Docket"1springfox.documentation.spring.web.plugins.DocketÙ
-Ö
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java	 (0
-%2"jspringfox.documentation.spring.web.plugins.Docket#<init>(Lspringfox/documentation/spi/DocumentationType;)V*9
-7
-%11springfox.documentation.spring.web.plugins.Docket*5
-3
-%0-springfox.documentation.spi.DocumentationTypeú÷
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java	 (C
-%3=springfox.documentation.spring.web.plugins.ApiSelectorBuilder"yspringfox.documentation.spring.web.plugins.Docket#select()Lspringfox/documentation/spring/web/plugins/ApiSelectorBuilder;*9
-7
-%11springfox.documentation.spring.web.plugins.Docket2select()è
-å
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java
- (<&
-%4 com.google.common.base.Predicate"zspringfox.documentation.builders.RequestHandlerSelectors#basePackage(Ljava/lang/String;)Lcom/google/common/base/Predicate;*<":
-8springfox.documentation.builders.RequestHandlerSelectors*
-com.exampleýú
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java	 (=C
-%5=springfox.documentation.spring.web.plugins.ApiSelectorBuilder"¥springfox.documentation.spring.web.plugins.ApiSelectorBuilder#apis(Lcom/google/common/base/Predicate;)Lspringfox/documentation/spring/web/plugins/ApiSelectorBuilder;*E
-C
-%3=springfox.documentation.spring.web.plugins.ApiSelectorBuilder*(
-&
-%4 com.google.common.base.Predicate2(apis(Lcom/google/common/base/Predicate;)Æ
-Ã
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java (%&
-%6 com.google.common.base.Predicate"jspringfox.documentation.builders.PathSelectors#regex(Ljava/lang/String;)Lcom/google/common/base/Predicate;*2"0
-.springfox.documentation.builders.PathSelectors*
-/.*ÿü
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java	 (&C
-%7=springfox.documentation.spring.web.plugins.ApiSelectorBuilder"¦springfox.documentation.spring.web.plugins.ApiSelectorBuilder#paths(Lcom/google/common/base/Predicate;)Lspringfox/documentation/spring/web/plugins/ApiSelectorBuilder;*E
-C
-%5=springfox.documentation.spring.web.plugins.ApiSelectorBuilder*(
-&
-%6 com.google.common.base.Predicate2)paths(Lcom/google/common/base/Predicate;)øõ
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java	 (7
-%81springfox.documentation.spring.web.plugins.Docket"xspringfox.documentation.spring.web.plugins.ApiSelectorBuilder#build()Lspringfox/documentation/spring/web/plugins/Docket;*E
-C
-%7=springfox.documentation.spring.web.plugins.ApiSelectorBuilder2build()"­
-p
-fC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/swaggerconfig/SwaggerConfig.java (9
-7
-%81springfox.documentation.spring.web.plugins.DocketB+)
-'com.example.swaggerconfig.SwaggerConfig
+6com.example.entity.UserDTO#getRole()Ljava/lang/String;c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/UserDTO.javaG G("1*œ
+1c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/UserDTO.javaH	 H(°
+­
+c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/UserDTO.javaH	 H(
+%0java.lang.String"__id*(*&
+com.example.entity.UserDTO"
+role"
+c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/UserDTO.javaH H(
+
+%0java.lang.StringB
+com.example.entity.UserDTO

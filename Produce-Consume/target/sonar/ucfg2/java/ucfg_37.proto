@@ -1,63 +1,98 @@
 
-_com.example.controller.UserController#sendNewsInformation(Ljava/lang/String;)Ljava/lang/String;n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaW W(%"paramAnnotations*È
+hcom.example.controller.UserController#addUserData(Lcom/example/entity/User;)Lcom/example/entity/UserDTO;n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java9 9("paramAnnotations*‡
 paramAnnotationsn
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaW% W(NÕ
- 
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java9 9(3·
+ﬁ
 n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaV V(2
-%4"
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java7 7(
+%7"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*!
+
+usercom.example.entity.User—
+Œ
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java8 8($
+%8"
 __annotate*'%
-#io.swagger.annotations.ApiOperation*
-
-messagejava.lang.Stringﬁ
-€
+#io.swagger.annotations.ApiOperation*!
+
+usercom.example.entity.User·
+ﬁ
 n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaW& W(>
-%5"
-__annotate*86
-4org.springframework.web.bind.annotation.PathVariable*
-
-messagejava.lang.StringÆ
-´
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java9 9((
+%9"
+__annotate*75
+3org.springframework.web.bind.annotation.RequestBody*!
+
+usercom.example.entity.User∫
+∑
 n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaWF W(M
-messagejava.lang.String"__annotation*
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java9. 9(2
+usercom.example.entity.User"__annotation*
 
-%4*
+%7*
 
-%5*
-1*Õ	
+%8*
+
+%9*
+1*˙
 1n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaX X(‹
-Ÿ
-n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaX X(%
-%0com.example.service.KafkaSender"__id*:*8'
-%com.example.controller.UserController"
-kafkaSender∫∑
-n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaX X(0
-
-%1void"Hcom.example.service.KafkaSender#sendNewsInformation(Ljava/lang/String;)V*'
-%
-%0com.example.service.KafkaSender*
-
-messagejava.lang.String2'sendNewsInformation(Ljava/lang/String;)ô
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java: :(ô
 ñ
 n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaY Y(
-%2org.slf4j.Logger"__id*
-""ˇ¸
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java: :(
+%0org.slf4j.Logger"__id*
+""ÙÒ
 n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaY Y(1
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java: :( 
 
-%3void"*org.slf4j.Logger#info(Ljava/lang/String;)V*
+%1void"*org.slf4j.Logger#info(Ljava/lang/String;)V*
 
-%2org.slf4j.Logger*
-News Information published2info(Ljava/lang/String;)"ù
+%0org.slf4j.Logger*
+Adding new user2info(Ljava/lang/String;)±Æ
 n
-dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.javaZ Z(9+)
-'News Information published successfully:
-messagejava.lang.StringB)'
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java; ;( 
+%2com.example.entity.UserDTO"com.example.entity.UserDTO√
+¿
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java; ;(!
+%3"$com.example.entity.UserDTO#<init>()V*"
+ 
+%2com.example.entity.UserDTOƒ
+¡
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java; ;("%
+userdtocom.example.entity.UserDTO"__id*"
+ 
+%2com.example.entity.UserDTOœ
+Ã
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java< <()
+
+%4void"Yorg.springframework.beans.BeanUtils#copyProperties(Ljava/lang/Object;Ljava/lang/Object;)V*'"%
+#org.springframework.beans.BeanUtils*!
+
+usercom.example.entity.User*'
+%
+userdtocom.example.entity.UserDTOŸ
+÷
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java=	 =("
+%5com.example.repo.UserServInt"__id*:*8'
+%com.example.controller.UserController"
+userServiceÎË
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java=	 =(% 
+%6com.example.entity.UserDTO"^com.example.repo.UserServInt#addUser(Lcom/example/entity/UserDTO;)Lcom/example/entity/UserDTO;*$
+"
+%5com.example.repo.UserServInt*'
+%
+userdtocom.example.entity.UserDTO2%addUser(Lcom/example/entity/UserDTO;)"î
+n
+dC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/controller/UserController.java= =(&"
+ 
+%6com.example.entity.UserDTO:
+usercom.example.entity.UserB)'
 %com.example.controller.UserController

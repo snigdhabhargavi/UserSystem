@@ -1,48 +1,16 @@
 
-[com.example.service.UserService#addUser(Lcom/example/entity/User;)Lcom/example/entity/User;h
-^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java" "("paramAnnotations*Â
-paramAnnotationsh
-^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java" "(∫
-∑
-h
-^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java! !(
-
-%2"
-__annotate*
-java.lang.Override*!
-
-usercom.example.entity.User§
-°
-h
-^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java" "(
-usercom.example.entity.User"__annotation*
-
-%2*
-1*ƒ
-1h
-^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java# #(ƒ
-¡
-h
-^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java# #(
-%0com.example.repo.UserRepo"__id*.*,!
-com.example.service.UserService"
-urepoÀ»
-h
-^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java# #(
-%1com.example.entity.User"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*!
-
-%0com.example.repo.UserRepo*!
-
-usercom.example.entity.User2save(Ljava/lang/Object;)≤
-Ø
-h
-^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java# #(
-ucom.example.entity.User"__id*
-
-%1com.example.entity.User"ä
-h
-^C:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/service/UserService.java$ $(
-
-ucom.example.entity.User:
-usercom.example.entity.UserB#!
-com.example.service.UserService
+7com.example.entity.UserDTO#getEmail()Ljava/lang/String;c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/UserDTO.java7 7("1*ù
+1c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/UserDTO.java8	 8(±
+Æ
+c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/UserDTO.java8	 8(
+%0java.lang.String"__id*)*'
+com.example.entity.UserDTO"
+email"
+c
+YC:/Users/SYS/git/UserSystem/Produce-Consume/src/main/java/com/example/entity/UserDTO.java8 8(
+
+%0java.lang.StringB
+com.example.entity.UserDTO

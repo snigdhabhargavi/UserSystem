@@ -3,6 +3,7 @@ package com.example.controller;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.entity.User;
+import com.example.entity.UserDTO;
 import com.example.exceptionhandling.ResourceNotFoundException;
 import com.example.repo.UserServInt;
 import com.example.service.KafkaConsumer;
@@ -37,31 +39,33 @@ public class UserController {
 	
 	@GetMapping(value="/getallusers")
 	@ApiOperation(value="Returns list of all users")
-	public List<User> getAllusers(){
+	public List<UserDTO> getAllusers(){
 		logger.info("List of users {}", userService.fetchAllUsers());
 		return userService.fetchAllUsers();
 	}
 	
 	@GetMapping(value="/getuser/{id}")
 	@ApiOperation(value="Returns a particular user")
-	public User getUserById(@PathVariable(value="id") int userid) throws ResourceNotFoundException{
-		User user = userService.fetchUserById(userid);
+	public UserDTO getUserById(@PathVariable(value="id") int userid) throws ResourceNotFoundException{
+		UserDTO user = userService.fetchUserById(userid);
 		logger.info("User Data {}", user);
 		return user;
 	}
 	
 	@PostMapping(value="/adduser")
 	@ApiOperation(value="Add new user")
-	public User addUserData(@RequestBody User user) {
+	public UserDTO addUserData(@RequestBody User user) {
 		logger.info("Adding new user");
-		return userService.addUser(user);
+		UserDTO userdto = new UserDTO();
+		BeanUtils.copyProperties(user, userdto);
+		return userService.addUser(userdto);
 	}
 	
 	@PutMapping(value="/updateuser/{id}")
 	@ApiOperation(value="Updates user information")
-	public User updateUserData(@PathVariable(value="id") int userid,@RequestBody User user) throws ResourceNotFoundException {
-		 User u = userService.updateUser(userid, user);
-	     logger.info("User data updated {}", u);
+	public UserDTO updateUserData(@PathVariable(value="id") int userid,@RequestBody User user) throws ResourceNotFoundException {
+		 UserDTO u = userService.updateUser(userid, user);
+		 logger.info("User data updated");
 		 return u;
 	}
 	

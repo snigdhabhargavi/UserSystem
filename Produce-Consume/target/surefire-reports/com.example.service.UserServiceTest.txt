@@ -1,24 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.service.UserServiceTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 493.029 s <<< FAILURE! - in com.example.service.UserServiceTest
-testFetchUserById  Time elapsed: 0.003 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is java.lang.IllegalStateException: Topic(s) [NewsInfo, OnlineExam] is/are not present and missingTopicsFatal is true
-Caused by: java.lang.IllegalStateException: Topic(s) [NewsInfo, OnlineExam] is/are not present and missingTopicsFatal is true
-
-testAddUser  Time elapsed: 0 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is java.lang.IllegalStateException: Topic(s) [NewsInfo, OnlineExam] is/are not present and missingTopicsFatal is true
-Caused by: java.lang.IllegalStateException: Topic(s) [NewsInfo, OnlineExam] is/are not present and missingTopicsFatal is true
-
-testFetchAllUsers  Time elapsed: 0 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is java.lang.IllegalStateException: Topic(s) [NewsInfo, OnlineExam] is/are not present and missingTopicsFatal is true
-Caused by: java.lang.IllegalStateException: Topic(s) [NewsInfo, OnlineExam] is/are not present and missingTopicsFatal is true
-
-testDeleteUser  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is java.lang.IllegalStateException: Topic(s) [NewsInfo, OnlineExam] is/are not present and missingTopicsFatal is true
-Caused by: java.lang.IllegalStateException: Topic(s) [NewsInfo, OnlineExam] is/are not present and missingTopicsFatal is true
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in com.example.service.UserServiceTest

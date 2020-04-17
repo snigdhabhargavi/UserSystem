@@ -18,7 +18,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.boot.test.context.SpringBootTest;
 import com.example.entity.Address;
-import com.example.entity.User;
+import com.example.entity.UserDTO;
 import com.example.repo.UserRepo;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -50,11 +50,11 @@ class UserServiceTest {
 		addr2.add(a6);
 		when(urepo.findAll()).thenReturn(
 				Arrays.asList(
-						new User(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1),
-						new User(2,"Tara", "tara@gmail.com", "tara", "Reporter", addr2)
+						new UserDTO(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1),
+						new UserDTO(2,"Tara", "tara@gmail.com", "tara", "Reporter", addr2)
 					)
 				);
-		List<User> userlist = userService.fetchAllUsers();
+		List<UserDTO> userlist = userService.fetchAllUsers();
 		assertEquals(1,userlist.get(0).getId());
 		assertEquals(2,userlist.size());
 	}
@@ -64,7 +64,7 @@ class UserServiceTest {
 		addr1.add(a1);
 		addr1.add(a2);
 		addr1.add(a3);
-		User u1 = new User(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
+		UserDTO u1 = new UserDTO(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
 		when(
 				urepo.findByEmail("sara@gmail.com")).thenReturn(u1);
 		assertEquals(u1, urepo.findByEmail("sara@gmail.com"));
@@ -75,7 +75,7 @@ class UserServiceTest {
 		addr1.add(a1);
 		addr1.add(a2);
 		addr1.add(a3);
-		User u1 = new User(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
+		UserDTO u1 = new UserDTO(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
 		urepo.save(u1);
 		verify(urepo, times(1)).save(u1);
 		when(urepo.save(u1)).thenReturn(u1);
@@ -88,7 +88,7 @@ class UserServiceTest {
 		addr1.add(a1);
 		addr1.add(a2);
 		addr1.add(a3);
-		User u1 = new User(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
+		UserDTO u1 = new UserDTO(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
 		urepo.deleteById(1);
 		verify(urepo, times(1)).deleteById(1);
 	}

@@ -1,8 +1,6 @@
 package com.example.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
@@ -11,15 +9,15 @@ public class Address {
 	@Id
 	private int addressid;
 	private String addresstype;
-	private String address;
+	private String addr;
 	public Address() {
 		super();
 	}
-	public Address(int addressid, String addresstype, String address) {
+	public Address(int addressid, String addresstype, String addr) {
 		super();
 		this.addressid = addressid;
 		this.addresstype = addresstype;
-		this.address = address;
+		this.addr = addr;
 	}
 	public int getAddressid() {
 		return addressid;
@@ -34,9 +32,9 @@ public class Address {
 		this.addresstype = addresstype;
 	}
 	public String getAddress() {
-		return address;
+		return addr;
 	}
 	public void setAddress(String address) {
-		this.address = address;
+		this.addr = address;
 	}
 }

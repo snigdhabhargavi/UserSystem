@@ -1,13 +1,9 @@
 package com.example.service;
 
 import java.util.List;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.example.entity.User;
+import com.example.entity.UserDTO;
 import com.example.exceptionhandling.ResourceNotFoundException;
 import com.example.repo.UserRepo;
 import com.example.repo.UserServInt;
@@ -19,26 +15,24 @@ public class UserService implements UserServInt{
 	UserRepo urepo;
 	
 	@Override
-	public List<User> fetchAllUsers() {
+	public List<UserDTO> fetchAllUsers() {
 		return urepo.findAll();
 	}
 
 	@Override
-	public User fetchUserById(int id) throws ResourceNotFoundException {
-		User user = urepo.findById(id)
+	public UserDTO fetchUserById(int id) throws ResourceNotFoundException {
+		return urepo.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("User not found for this Id :: "+id));
-		return user;
 	}
 
 	@Override
-	public User addUser(User user) {
-		User u = urepo.save(user);
-		return u;
+	public UserDTO addUser(UserDTO user) {
+		return urepo.save(user);
 	}
 
 	@Override
-	public User updateUser(int id, User user) throws ResourceNotFoundException {
-		User u = urepo.findById(id)
+	public UserDTO updateUser(int id, UserDTO user) throws ResourceNotFoundException {
+		UserDTO u = urepo.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("User not found for this Id :: "+id));
 		if(u!=null) {
 			u.setName(user.getName());

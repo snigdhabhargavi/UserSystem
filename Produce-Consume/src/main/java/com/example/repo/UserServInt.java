@@ -3,18 +3,18 @@ package com.example.repo;
 import java.util.List;
 
 
-import com.example.entity.User;
+import com.example.entity.UserDTO;
 import com.example.exceptionhandling.ResourceNotFoundException;
 
 public interface UserServInt {
 	
-	public List<User> fetchAllUsers();
+	public List<UserDTO> fetchAllUsers();
 	
-	public User fetchUserById(int id) throws ResourceNotFoundException;
+	public UserDTO fetchUserById(int id) throws ResourceNotFoundException;
 	
-	public User addUser(User user);
+	public UserDTO addUser(UserDTO user);
 	
-    public User updateUser(int id, User user) throws ResourceNotFoundException;
+    public UserDTO updateUser(int id, UserDTO user) throws ResourceNotFoundException;
     
     public void deleteUser(int id) throws ResourceNotFoundException;
 

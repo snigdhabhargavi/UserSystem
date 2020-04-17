@@ -24,7 +24,7 @@ import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import com.example.entity.Address;
-import com.example.entity.User;
+import com.example.entity.UserDTO;
 import com.example.repo.UserServInt;
 import com.example.service.KafkaConsumer;
 import com.example.service.KafkaSender;
@@ -64,12 +64,12 @@ class UserControllerTest {
 		addr1.add(a1);
 		addr1.add(a2);
 		addr1.add(a3);
-		User u1 = new User(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
+		UserDTO u1 = new UserDTO(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
 		addr2.add(a4);
 		addr2.add(a5);
 		addr2.add(a6);
-		User u2 = new User(2,"Tara", "tara@gmail.com", "tara", "Reporter", addr2);
-		List<User> userlist = new ArrayList();
+		UserDTO u2 = new UserDTO(2,"Tara", "tara@gmail.com", "tara", "Reporter", addr2);
+		List<UserDTO> userlist = new ArrayList();
 		userlist.add(u1);
 		userlist.add(u2);
 		ObjectMapper Obj = new ObjectMapper();
@@ -93,7 +93,7 @@ class UserControllerTest {
 		addr1.add(a1);
 		addr1.add(a2);
 		addr1.add(a3);
-		User u1 = new User(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
+		UserDTO u1 = new UserDTO(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
 		ObjectMapper Obj = new ObjectMapper();
 		String str1 = Obj.writeValueAsString(u1);
 		when(userint.fetchUserById(1)).thenReturn(u1);
@@ -115,7 +115,7 @@ class UserControllerTest {
 		addr1.add(a1);
 		addr1.add(a2);
 		addr1.add(a3);
-		User u1 = new User(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
+		UserDTO u1 = new UserDTO(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
 		ObjectMapper Obj = new ObjectMapper();
 		Obj.configure(SerializationFeature.WRAP_ROOT_VALUE, false);
 	    ObjectWriter ow = Obj.writer().withDefaultPrettyPrinter();
@@ -138,7 +138,7 @@ class UserControllerTest {
 		addr1.add(a1);
 		addr1.add(a2);
 		addr1.add(a3);
-		User u1 = new User(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
+		UserDTO u1 = new UserDTO(1,"Sara", "sara@gmail.com", "sara", "Examiner", addr1);
 		RequestBuilder requestBuilder = MockMvcRequestBuilders
 				.delete("/deleteuser/1")
 				.accept(MediaType.TEXT_PLAIN);
@@ -148,12 +148,4 @@ class UserControllerTest {
                 .andExpect(content().string("Deleted Successfully"))
                 .andReturn();
 	}
-	
-/*
-	@Test
-	void testUpdateUserData() {
-		fail("Not yet implemented");
-	}
-
-*/
 }

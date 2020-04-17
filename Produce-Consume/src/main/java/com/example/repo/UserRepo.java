@@ -3,11 +3,11 @@ package com.example.repo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.entity.User;
+import com.example.entity.UserDTO;
 
 @Repository
-public interface UserRepo extends JpaRepository<User, Integer>{
+public interface UserRepo extends JpaRepository<UserDTO, Integer>{
 
-	User findByEmail(String string);
+	UserDTO findByEmail(String string);
 
 }

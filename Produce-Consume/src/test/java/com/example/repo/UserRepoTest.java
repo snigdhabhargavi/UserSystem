@@ -1,7 +1,6 @@
 package com.example.repo;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -14,7 +13,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.example.entity.Address;
-import com.example.entity.User;
+import com.example.entity.UserDTO;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
@@ -37,7 +36,7 @@ class UserRepoTest {
 		addr1.add(a1);
 		addr1.add(a2);
 		addr1.add(a3);
-		User u1 = new User();
+		UserDTO u1 = new UserDTO();
 		u1.setName("Sara");
 		u1.setEmail("sara@gmail.com");
 		u1.setPassword("sara");
@@ -58,21 +57,21 @@ class UserRepoTest {
 		addr2.add(a5);
 		addr2.add(a6);
 		
-		User u1 = new User();
+		UserDTO u1 = new UserDTO();
 		u1.setName("Sara");
 		u1.setEmail("sara@gmail.com");
 		u1.setPassword("sara");
 		u1.setRole("Examiner");
 		u1.setAddress(addr1);
 		
-		User u2 = new User();
+		UserDTO u2 = new UserDTO();
 		u1.setName("Tara");
 		u1.setEmail("tara@gmail.com");
 		u1.setPassword("tara");
 		u1.setRole("Reporter");
 		u1.setAddress(addr2);
 		
-		List<User> userlist = new ArrayList();
+		List<UserDTO> userlist = new ArrayList();
 		userlist.add(u1);
 		userlist.add(u2);
 
@@ -89,7 +88,7 @@ class UserRepoTest {
 		addr1.add(a2);
 		addr1.add(a3);
 		
-		User u1 = new User();
+		UserDTO u1 = new UserDTO();
 		u1.setName("Sara");
 		u1.setEmail("sara@gmail.com");
 		u1.setPassword("sara");
@@ -109,7 +108,7 @@ class UserRepoTest {
 		addr2.add(a5);
 		addr2.add(a6);	
 		
-		User u1 = new User();
+		UserDTO u1 = new UserDTO();
 		u1.setName("Sara");
 		u1.setEmail("sara@gmail.com");
 		u1.setPassword("sara");
@@ -117,7 +116,7 @@ class UserRepoTest {
 		u1.setAddress(addr1);
 		urepo.save(u1);
 		
-		User u2 = new User();
+		UserDTO u2 = new UserDTO();
 		u1.setName("Tara");
 		u1.setEmail("tara@gmail.com");
 		u1.setPassword("tara");

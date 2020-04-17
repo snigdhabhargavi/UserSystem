@@ -7,6 +7,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 public class ProduceConsumeApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
-		SpringApplication.run(ProduceConsumeApplication.class, args);
+		SpringApplication.run(ProduceConsumeApplication.class);
 	}
 }

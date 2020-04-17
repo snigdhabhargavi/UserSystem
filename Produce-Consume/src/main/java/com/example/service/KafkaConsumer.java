@@ -13,7 +13,7 @@ public class KafkaConsumer {
     {
         Logger log=LoggerFactory.getLogger(KafkaConsumer.class);
         consumedmessage= message;
-        log.info("Cosumed Message---->"+message);  
+        log.info("Cosumed Message----> {}", message);  
     }
     
     public String getConsumedmessage() {
